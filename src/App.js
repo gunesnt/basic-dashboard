@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Layout from "./layout";
+import TeamsPage from "./pages/teams";
+import TabContext from "./contexts/TabContext";
 
-function App() {
+const App = () => {
+  const [tab, setTab] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TabContext.Provider value={[tab, setTab]}>
+      <Layout>
+        <TeamsPage />
+      </Layout>
+    </TabContext.Provider>
   );
-}
+};
 
 export default App;
