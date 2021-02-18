@@ -1,6 +1,5 @@
 # BASIC DASHBOARD
-
-Hello, I just started that project with `create-react-app`. Also, I decided to use the Material UI for ui implementation. I fixed the global state issue with `Context API` and `useState` hybrid way. This was most challenging part to me. Because, I wanted to solve it with `Hooks` instead of `Redux`. I tried to use the theme system of the Material UI.
+I just started that project with `create-react-app`. Also, I decided to use the Material UI for ui implementation. I fixed the global state issue with `Context API` and `useState` hybrid way. This was most challenging part to me. Because, I wanted to solve it with `Hooks` instead of `Redux`. I tried to use the theme system of the Material UI.
 
 ## Explaining How To Do This
 
